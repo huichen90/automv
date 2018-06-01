@@ -52,34 +52,3 @@ if __name__ == '__main__':
 
 
 
-
-
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# import paramiko, datetime, os
-#
-# host_ip = '47.91.236.20'
-# username1 = '***'
-# password1 = '****'
-# port = 22
-# local_dir = 'd:/aaa'
-# remote_dir = '/home/temp/Templates'
-# try:
-#     t = paramiko.Transport(host_ip, port)
-#     t.connect(username=username1, password=password1)
-#     sftp = paramiko.SFTPClient.from_transport(t)
-#     files = os.listdir(local_dir)  # 上传多个文件
-#     # files = sftp.listdir(remote_dir)  # 下载多个文件
-#     for f in files:
-#         print ''
-#         print '#########################################'
-#         print 'Beginning to download file  from %s  %s ' % (host_ip, datetime.datetime.now())
-#         print 'Downloading file:', (remote_dir + '/' + f)
-#         # sftp.get(remote_dir + '/' + f, os.path.join(local_dir, f))  # 下载多个文件
-#         sftp.put(os.path.join(local_dir, f), remote_dir + '/' + f)  # 上传多个文件
-#         print 'Download file success %s ' % datetime.datetime.now()
-#         print ''
-#         print '##########################################'
-#     t.close()
-# except Exception:
-#     print "connect error!"
